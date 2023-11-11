@@ -44,10 +44,14 @@ if __name__ == "__main__":
     gruppi_parole = [
         #parole[:100000], 
         #parole[100000:200000], 
-        parole[200000:300000], 
-        parole[300000:400000], 
-        parole[400000:500000], 
-        parole[500000:600000], 
+        parole[200000:250000], 
+        parole[250000:300000], 
+        parole[300000:350000], 
+        parole[350000:400000], 
+        parole[400000:450000], 
+        parole[450000:500000], 
+        parole[500000:550000], 
+        parole[550000:600000], 
         parole[600000:]]
 
     #voglio parallelizzare il check_parola su oguno dei gruppi di parole
