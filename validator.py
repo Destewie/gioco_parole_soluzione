@@ -41,12 +41,19 @@ def scrivi_parole(parole):
 
 if __name__ == "__main__":
     parole = get_parole()
-    gruppi_parole = [parole[:100000], parole[100000:200000], parole[200000:300000], parole[300000:400000], parole[400000:500000], parole[500000:600000], parole[600000:]]
-    parole_treccani = []
+    gruppi_parole = [
+        #parole[:100000], 
+        #parole[100000:200000], 
+        parole[200000:300000], 
+        parole[300000:400000], 
+        parole[400000:500000], 
+        parole[500000:600000], 
+        parole[600000:]]
 
     #voglio parallelizzare il check_parola su oguno dei gruppi di parole
 
     for i, gruppo in enumerate(gruppi_parole):
+        parole_treccani = []
         print(f"Gruppo {i}")
         with ThreadPoolExecutor(max_workers=30) as executor:  # Imposta il numero massimo di thread a tuo piacimento
             results = list(tqdm(executor.map(check_parola, gruppo), total=len(gruppo)))
