@@ -51,8 +51,16 @@ if __name__ == "__main__":
         with ThreadPoolExecutor(max_workers=30) as executor:  # Imposta il numero massimo di thread a tuo piacimento
             results = list(tqdm(executor.map(check_parola, gruppo), total=len(gruppo)))
 
+        parole_verificate_per_gruppo = 0
         for i, parola in enumerate(gruppo):
             if results[i]:
+                parole_verificate_per_gruppo += 1
                 parole_treccani.append(parola)
 
         scrivi_parole(parole_treccani)
+
+        #un po' di stats
+        print(f"Parole totali: {len(gruppo)}")
+        print(f"Parole presenti anche sulla Treccani: {parole_verificate_per_gruppo}")
+        print("--------------------------------------------------")
+        
