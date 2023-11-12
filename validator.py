@@ -42,10 +42,10 @@ def scrivi_parole(parole):
 if __name__ == "__main__":
     parole = get_parole()
     gruppi_parole = [
-        #parole[:100000], 
-        #parole[100000:200000], 
+        parole[:100000], 
+        parole[100000:200000], 
         parole[200000:250000], 
-        parole[250000:300000], 
+        parole[250000:300000],
         parole[300000:350000], 
         parole[350000:400000], 
         parole[400000:450000], 
