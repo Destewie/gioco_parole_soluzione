@@ -14,8 +14,16 @@ L'unica è confrontare il dataset delle 660000 parole italiane per vedere quali 
 Per fare questo, faccio richieste a _https://www.treccani.it/vocabolario/parola/_ 
 
 # Cosa fare con i dati ottenuti
-Bot Telegram che giochi con noi. Le sa praticamente tutte, ma è questo il bello 
+Un engine per il gioco delle lettere.
 
+
+Input:
+* Numero di giocatori
+* Posto all'interno del giro
+* Lettere dette prima di te
+
+Output:
+Best move a livello probabilistico
 
 
  
