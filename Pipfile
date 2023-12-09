@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 requests = "*"
 tqdm = "*"
+scikit-image = "*"
+graphviz = "*"
 
 [dev-packages]
 
